@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>spaghebbeat</title>
+	
+    <style> 
+	html, body {
+		height: 100%;
+	}
+	
+	@font-face {
+		font-family: odin;
+		src: url(odin.otf);
+	}
+	 
+	body {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: odin;
+	}	
+	
+	#settings-cover {
+		position: absolute;
+		background-color: rgba(0,0,0,0.6);
+		width: 100%;
+		height: 100%;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#settings-content {
+		background-color: rgba(0,0,0,0.6);
+		color: white;
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		padding: 20px;
+		border-radius: 10px;
+		
+		font-size: 18px;
+	}
+	#settings-content button {
+		background-color: rgba(255,255,255,0.2);
+		color: white;
+		padding: 7px;
+		border-radius: 4px;
+		border: none;
+		font-family: odin;
+		font-size: 18px;
+		
+		transition: all 0.3s;
+	}
+	#settings-content button:hover {
+		background-color: rgba(255,255,255,0.3);
+	}
+	</style>
+	
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <script src="howler.js"></script>
+	
+    <script src="tutorial.js"></script>
+    <script src="utils.js"></script>
+    <script src="game.js"></script>
+    <script src="results.js"></script>
+    <script src="select.js"></script>
+    <script src="start.js"></script>
+  </head>
+  
+  <body>
+	  <div id="settings-cover">
+		<div id="settings-content">
+			hey! wip settings.
+			<br><br>
+			<input type="checkbox" id="playfieldJank"> playfield overshoot
+			<br>
+			<input type="checkbox" id="backgroundFX"> background effects
+			<br>
+			<input type="checkbox" id="noSongPalettes"> override song palettes
+			<br><br>
+			<input type="color" id="bgColor"> bg
+			<input type="color" id="bgfxColor"> bgfx
+			<input type="color" id="lineColor"> line
+			<input type="color" id="ghostColor"> ghost
+			<input type="color" id="uiColor"> ui
+			<br><br>
+			<input type="checkbox" id="fancyMenu"> fancy menuing
+			<br><br>
+			<input type="number" id="globalOffset"> global offset
+			<br><br>
+			<button onclick="select.quitOptions()">
+				just get me out of here
+			</button>
+		</div>
+	  </div>
+  </body>
+  
+</html>

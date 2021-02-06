@@ -1,0 +1,20 @@
+{
+	"id": "tutorial",
+	"title": "tutorial",
+	"artist": "noodle",
+	"bpm": 120,
+	"offset": 0,
+	"preview": 99,
+	"easy": 1,
+	"url": "http://electr1.ca",
+	"palette": {
+		"bg": "#26AF56",
+		"bgfx": "#3FC66E",
+		"ghost": "#209449",
+		"line": "#E13131",
+		"ui": "#31E16F"
+	},
+	"patterns":{
+		"easy": [{"start":8,"notes":[{"x":0,"y":0},{"x":8,"y":0}],"scale":0.5},{"start":24,"notes":[{"x":0,"y":0},{"x":0,"y":4},{"x":4,"y":4},{"x":4,"y":0},{"x":8,"y":0}],"scale":0.5},{"start":48,"notes":[{"x":0,"y":0},{"x":0,"y":-2},{"x":-2,"y":-2}],"scale":1},{"start":52,"notes":[{"x":0,"y":0},{"x":0,"y":-4},{"x":2,"y":-4},{"x":2,"y":-2},{"x":6,"y":-2}],"scale":1}]
+	}
+}

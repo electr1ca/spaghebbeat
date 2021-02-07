@@ -33,7 +33,11 @@ function tweenSineIn(t,b,c,d) {
 }
 
 function setting(id) {
-	if (id==='globalOffset' && !eval(localStorage.getItem(id))) return 0;
+	if (!id.includes('Color') && !eval(localStorage.getItem(id))) {
+		if (id === 'globalOffset') return 0;
+		if (id === 'fancyMenu') return true;
+		else return false;
+	}
 	if (id.includes('Color')) return localStorage.getItem(id);
 	else return eval(localStorage.getItem(id));
 }

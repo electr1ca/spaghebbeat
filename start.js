@@ -1,7 +1,7 @@
 //core functions
 
 function preload() {
-	mainFont=loadFont('odin.otf');
+	mainFont=loadFont('assets/odin.otf');
 	
 	select.loadData(['tutorial','fish']);
 	
